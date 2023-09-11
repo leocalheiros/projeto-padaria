@@ -10,7 +10,7 @@ class ProdutoRepository:
         produto = Produto(nome, sabor, loja)
         self.__produtos_list.append(produto)
 
-    def listar_produtos(self) -> List:
+    def listar_todos_produtos(self) -> List:
         return self.__produtos_list
 
     def deletar_produto(self, nome: str) -> None:
