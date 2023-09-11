@@ -50,3 +50,6 @@ def start() -> None:
 
         elif command == '9':
             sys.exit()
+
+        else:
+            print('\nComando inválido! Tente novamente!\n\n')
