@@ -11,7 +11,7 @@ class LojaController:
         self.loja_repository.cadastrar_loja(nome)
         self.loja_view.cadastrar_loja(nome)
 
-    def listar_todas_lojas(self) -> any:
+    def listar_todas_lojas(self):
         lojas = self.loja_repository.listar_lojas()
         self.loja_view.mostrar_lojas(lojas)
 
