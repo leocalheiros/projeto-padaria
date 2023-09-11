@@ -1,6 +1,9 @@
 from .constructors.introduction_process import introduction_process
 from .constructors.cadastrar_cliente_process import cadastrar_cliente_process
 from .constructors.listar_clientes_por_estado_process import listar_clientes_por_estado_process
+from .constructors.cadastrar_produto_process import cadastrar_produto_process
+from .constructors.listar_produtos_process import listar_produtos_process
+from .constructors.deletar_produto_process import deletar_produto_process
 
 
 def start() -> None:
@@ -16,3 +19,16 @@ def start() -> None:
         elif command =='2':
             estado = input('Digite o estado para listar os clientes: ')
             listar_clientes_por_estado_process(estado)
+
+        elif command =='3':
+            nome = input("Digite o nome do produto: ")
+            sabor = input("Digite o sabor do produto: ")
+            loja = input("Digite o nome da loja do produto: ")
+            cadastrar_produto_process(nome, sabor, loja)
+
+        elif command =='4':
+            listar_produtos_process()
+
+        elif command =='5':
+            produto = input("Digite o produto para deletar: ")
+            deletar_produto_process(produto)

@@ -20,7 +20,7 @@ class ProdutoView:
         for produto in produtos:
             print(f"Nome do produto: {produto.nome} - Sabor: {produto.sabor}")
 
-    def deletar_produtos(self, produto: any) -> any:
+    def deletar_produto(self, produto: any) -> any:
         self.__clear()
 
         if not produto:
