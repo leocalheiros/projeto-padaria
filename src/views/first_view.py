@@ -4,13 +4,11 @@ def introduction_page():
         
         * 1. Cadastrar Cliente
         * 2. Listar clientes por estado
-        * 3. Cadastrar Produto
-        * 4. Listar Produtos
-        * 5. Deletar produto
-        * 6. Cadastrar loja
-        * 7. Listar lojas
-        * 8. Deletar loja
-        * 9. Sair
+        * 3. Mostrar Clientes
+        * 4. Cadastrar Produto
+        * 5. Listar Produtos
+        * 6. Deletar produto
+        * 7. Sair
     '''
 
     print(message)

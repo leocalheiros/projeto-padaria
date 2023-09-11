@@ -11,7 +11,8 @@ class ClienteController:
         self.cliente_repository.cadastrar_cliente(nome, telefone, estado)
         self.cliente_view.cadastrar_cliente(nome, telefone, estado)
 
+    def mostrar_clientes(self):
+        self.cliente_repository.mostrar_clientes()
+
     def listar_clientes_por_estado(self, estado: str):
-        clientes = self.cliente_repository.listar_clientes_por_estado(estado)
-        self.cliente_view.mostrar_clientes(clientes)
-        return clientes
+        self.cliente_repository.listar_clientes_por_estado(estado)

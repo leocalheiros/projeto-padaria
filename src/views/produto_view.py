@@ -2,13 +2,13 @@ import os
 
 
 class ProdutoView:
-    def cadastrar_produto(self, nome: str, sabor: str, loja: str) -> any:
+    def cadastrar_produto(self, nome: str, sabor: str) -> any:
         self.__clear()
 
-        if not nome or not sabor or not loja:
+        if not nome or not sabor:
             print("Preencha todos os campos")
             return
-        print(f"Produto cadastrado com sucesso: {nome} - Sabor: {sabor} - Loja: {loja}")
+        print(f"Produto cadastrado com sucesso: {nome} - Sabor: {sabor}")
 
     def mostrar_produtos(self, produtos: any) -> any:
         self.__clear()
@@ -26,7 +26,7 @@ class ProdutoView:
         if not produto:
             print("Produto não encontrado")
             return
-        print(f"Produto deletado com sucesso: {produto.nome}")
+        print("Produto deletado com sucesso!")
 
     def __clear(self):
         os.system('cls||clear')
