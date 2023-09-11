@@ -2,7 +2,6 @@ from src.models.repositories.produto_repository import ProdutoRepository
 from src.models.repositories.loja_repository import LojaRepository
 from src.views.produto_view import ProdutoView
 
-
 class ProdutoController:
     def __init__(self):
         self.produto_repository = ProdutoRepository()
@@ -10,6 +9,7 @@ class ProdutoController:
         self.produto_view = ProdutoView()
 
     def cadastrar_produto(self, nome: str, sabor: str, loja: str) -> None:
+
         self.produto_repository.cadastrar_produto(nome, sabor, loja)
         self.produto_view.cadastrar_produto(nome, sabor, loja)
 
